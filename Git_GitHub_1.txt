@@ -73,3 +73,105 @@ git pull 원격저장소이름, 브랜치 이름
 1. 오늘 배운 내용을 정리하고 커밋 푸시
 2. Django 등 이제까지 배웠던 내용들 정리해서 커밋 푸시
 3. Django 프로젝트를 새로 열어서 게시판 만들면서 자연스럽게 버전 기록
+
+
+git remote remove origin 연결 끊기
+
+.gitignore  만들어서
+
+__pycache__/
+a.txt
+이렇게 목록 넣으면 보지마
+
+
+버전관리와 상관없는 파일 관리...
+특정파일, 디렉토리 확장자 예외처리
+
+이미 커밋된건 안된다...
+
+프로젝트 시작 전에 미리 확인
+
+https://gitignore.io
+
+여기서 추가해 넣으면 된다.. 개발언어랑 개발환경
+
+
+https://desktop.github.com/
+https://education.github.com/pack/join
+https://git-scm.com/book/ko/v2
+https://docs.github.com/en/get-started/quickstart/hello-world
+
+rewind ai
+
+https://www.youtube.com/watch?v=LnjVbU6Ld1M
+
+
+--------------
+BRANCH
+---------------
+독립적인 작업흐름을 만들고 관리
+
+브랜치 합칠때 merge
+
+board작업시에 main과 관련된 수정이 일어난 상태에서 merge 하면 어떻게 되나요?
+
+git status - 동시에 수정된 파일 확인가능
+충돌 발생 후에
+git add .
+git commit 해서 하자
+
+병합한 branch는 삭제하자
+
+main 브랜치는 직접 push 할 수 없도록 막아둠
+=>PR로만 가능함
+
+리뷰가 필수인 경우
+=> 꼭 리뷰어를 3명을 반드시 통과해야한 PR을 Merge 버튼 활성화
+
+관리자(시니어급) Merge를 하도록 하기도 함
+
+GitHub으로 협업을 한다는 것은
+(1) 작업하기 전에 브랜치르 만든다.
+git branch (branch name)
+git checkout (branch name)
+(2) 열심히 코딩한다.
+(3) 버전을 기록한다.(커밋)
+git add ./ git commit -m ''
+
+(4) 작업이 끝나면, 작업한 브랜치를 push한다.
+git push origin 브랜치이름
+
+(5) GitHub에 Pull Request를 생성한다.
+(6) 코드 리뷰 등 협업 룰에 따라서 진행하고 다 완료되면 merge가 GitHub에서 된다.
+
+GitHub Flow Models
+- Shared Repository Model
+- Fork & Pull Model
+
+풀리퀘스트 창에서 head -> base
+
+
+남의 repo에서 fork 누르고 내껄로 만든 다음에
+링크 복사
+git bash로 git clone <link>
+
+작업
+애드 커밋 푸쉬, pull request
+
+
+
+
+# Git/GitHub 활용 실습
+
+## 프로젝트 - 프로필
+
+1. 프로젝트 시작
+	- 바탕화면에 폴더 생성
+	- README.md 파일이 반드시 필요
+	- git 저장소로 만들고 커밋
+2. GitHub
+	- 원격저장소 이름은 **반드시 여러분의 `username`으로!**
+	- 원격저장소 설정을 마무리하고 push하면 끝!
+3. 프로필 확인 : https
+4. 실습 완료 후 체크시트에 링크 업데이트
+5. 구글에 GitHub Profile Readme라고 검색해보시면 정말 다양하게 꾸미고, 설정할 수 있는 방법이 있습니다.
